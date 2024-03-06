@@ -1,0 +1,4 @@
+repository "CS-555-Team15-MindLink@Calvin526@cloud"
+  path "/"
+    br "/main"
+    co "/main"
