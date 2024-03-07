@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ebdd3e340eb9996c3283bfac79884d848d4633679ab7704904a51a4cc8c9e27f
-size 566
+fileFormatVersion: 2
+guid: e00180906352d1a45a93381b987e0f74
+timeCreated: 1496671782
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - testImage: {instanceID: 0}
+  - SourceFont: {instanceID: 0}
+  - SourceMaterial: {instanceID: 0}
+  - SoftFont: {instanceID: 0}
+  - eShader: {fileID: 7200000, guid: 07390d8d94046e34a80885a3db0019bd, type: 3}
+  - sourceText: {instanceID: 0}
+  - blurText: {instanceID: 0}
+  - sourceText2D: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5496399565c613bc9e511b3419bfef9e6c11bae11ba84a688e9e88ecba2cc808
-size 512
+fileFormatVersion: 2
+guid: 25e497cdc13f32349ae95251700f69f7
+timeCreated: 1513245868
+licenseType: Store
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Arista 2.0
+  fontNames:
+  - Arista 2.0
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

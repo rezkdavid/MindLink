@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b966bce0b47f8f7afc3959d4721170854f0a14a08524354a3d5086f257312dcf
-size 601
+fileFormatVersion: 2
+guid: f90c3b2ec0fae5a48b5cd338193b430b
+timeCreated: 1513868279
+licenseType: Store
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 48
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: PF BeauSans Pro
+  fontNames:
+  - PF BeauSans Pro
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 4667828bc24094141963ca09c6559807, type: 3}
+  customCharacters: Start Game
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
