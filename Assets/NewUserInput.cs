@@ -32,6 +32,7 @@ public class NewUserInput : MonoBehaviour
     void registerUser()
     {
         bool isExists = false;
+        // text file content are contents are added to the arraylist
         credentials = new ArrayList(File.ReadAllLines(Application.dataPath + "/userInfo.txt"));
         foreach (var i in credentials) // changed from userInfo to credentials
         {
@@ -43,10 +44,12 @@ public class NewUserInput : MonoBehaviour
         }
         if (isExists)
         {
+        // if the userID exits , stops from creating ducplicates ID and prompt in log that userID exist
             Debug.Log($"Username '{userID.text}' already exists");
         }
         else
         {
+        // userID is added if it does not have and update the text file
             credentials.Add(userID.text + ":" + fullName.text);
             File.WriteAllLines(Application.dataPath + "/userInfo.txt", (string[])credentials.ToArray(typeof(string)));
             Debug.Log("User Created !");
