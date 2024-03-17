@@ -11,30 +11,34 @@ public class NewUserInput : MonoBehaviour
     public InputField userID;
     public InputField fullName;
     public Button okButton;
-    ArrayList credentials; // changed from userInfo to credentials
+    ArrayList credentials;
+
 
     void Start()
     {
         // when ok button is clicked,registerUser method is called and the data is registered to the database as arrayList
         okButton.onClick.AddListener(registerUser);
-        // 
-        if (File.Exists(Application.dataPath + "/userInfo.txt"))
-        {
-            credentials = new ArrayList(File.ReadAllLines(Application.dataPath + "/userInfo.txt"));
-        }
-        else
-        {
-            credentials = new ArrayList(); 
-            File.WriteAllText(Application.dataPath + "/userInfo.txt", ""); // Create an empty file
-        }
     }
 
     void registerUser()
     {
         bool isExists = false;
+        // to check if the file exist
+        if (File.Exists(Application.dataPath + "/userInfo.txt"))
+        {
+            // copy all the contents of the file to arraylist
+            credentials = new ArrayList(File.ReadAllLines(Application.dataPath + "/userInfo.txt"));
+        }
+        else
+        {
+
+            // credentials = new ArrayList(); 
+            // Create an empty file
+            File.WriteAllText(Application.dataPath + "/userInfo.txt", ""); 
+        }
         // text file content are contents are added to the arraylist
         credentials = new ArrayList(File.ReadAllLines(Application.dataPath + "/userInfo.txt"));
-        foreach (var i in credentials) // changed from userInfo to credentials
+        foreach (var i in credentials)
         {
             if (i.ToString().Contains(userID.text)) // changed usernameInput.text to userID.text
             {

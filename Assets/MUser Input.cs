@@ -13,7 +13,6 @@ public class MUserInput : MonoBehaviour
 
    ArrayList credentials;
    void Start(){
-    okButton.onClick.AddListener(loadUser);
     if (File.Exists(Application.dataPath + "/userInfo.txt"))
         {
             credentials = new ArrayList(File.ReadAllLines(Application.dataPath + "/userInfo.txt"));
@@ -22,6 +21,8 @@ public class MUserInput : MonoBehaviour
         {
             Debug.Log("Credential file doesn't exist");
         }
+    okButton.onClick.AddListener(loadUser);
+    
    }
    public void loadUser(){
     bool isExists = false;
@@ -38,9 +39,10 @@ public class MUserInput : MonoBehaviour
         }
         if (isExists)
         {
+            // creating a log for backend
             Debug.Log($"Logging in '{userID.text}'");
-            // moving to the next screen, for now it will create a log.
-            // write a code with to call method for next scene (SceneManager.LoadScene("**next scene**));
+            // when clicked play button, it moves to the next scene, which is game scene.
+            SceneManager.LoadScene("Game Screen");
         }
         else
         {
