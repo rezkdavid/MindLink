@@ -310,7 +310,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -103}
+  m_AnchoredPosition: {x: 0, y: -46}
   m_SizeDelta: {x: 400, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &140396417
@@ -378,11 +378,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 140396415}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffcc5b2f6d7c16e49b668c892ccd0d3d, type: 3}
+  m_Script: {fileID: 11500000, guid: 342fb8701fba148b7a7566753ed0b581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonToShow: {fileID: 140396415}
-  buttonToShow2: {fileID: 740073411}
+  buttonToShow: {fileID: 0}
+  buttonToShow2: {fileID: 0}
 --- !u!114 &140396419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -574,7 +574,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 9.8964
+  orthographic size: 12.895795
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1161,10 +1161,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 740073411}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffcc5b2f6d7c16e49b668c892ccd0d3d, type: 3}
+  m_Script: {fileID: 11500000, guid: 342fb8701fba148b7a7566753ed0b581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonToShow: {fileID: 740073411}
+  buttonToShow: {fileID: 0}
   buttonToShow2: {fileID: 0}
 --- !u!114 &740073414
 MonoBehaviour:
@@ -1221,7 +1221,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -218}
+  m_AnchoredPosition: {x: 0, y: -163}
   m_SizeDelta: {x: 400, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &835543725
@@ -2592,7 +2592,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1688317079}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 797f17e5e7ad08840bc0f01789ea4a63, type: 3}
+  m_Script: {fileID: 11500000, guid: 90e1dcddc1e9843388c513c1317d8023, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
@@ -2677,11 +2677,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1688317079}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffcc5b2f6d7c16e49b668c892ccd0d3d, type: 3}
+  m_Script: {fileID: 11500000, guid: 342fb8701fba148b7a7566753ed0b581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonToShow: {fileID: 140396415}
-  buttonToShow2: {fileID: 740073411}
+  buttonToShow: {fileID: 740073411}
+  buttonToShow2: {fileID: 140396415}
 --- !u!212 &1688317084
 SpriteRenderer:
   m_ObjectHideFlags: 0
