@@ -750,7 +750,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: hello user!
+  m_Text: 
 --- !u!222 &660785085
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -850,6 +850,7 @@ GameObject:
   - component: {fileID: 941001708}
   - component: {fileID: 941001707}
   - component: {fileID: 941001706}
+  - component: {fileID: 941001710}
   m_Layer: 5
   m_Name: EndCard Dashboard Menu
   m_TagString: Untagged
@@ -946,6 +947,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &941001710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941001705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4159e7c9b76254ecda10b2b8ffb7d75d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playAgainButton: {fileID: 320806397}
+  quitButton: {fileID: 260438997}
 --- !u!1 &1225956602
 GameObject:
   m_ObjectHideFlags: 0

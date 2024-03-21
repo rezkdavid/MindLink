@@ -6,10 +6,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class MUserInput : MonoBehaviour
 {
    public Button okButton;
    public InputField userID;
+   public UserDataHolder userDataHolder;
+
 
    ArrayList credentials;
    void Start(){
@@ -34,6 +37,7 @@ public class MUserInput : MonoBehaviour
             if (i.ToString().Substring(0, i.ToString().IndexOf(":")).Equals(userID.text))
             {
                 isExists = true;
+                userDataHolder.userName = line.Substring(line.IndexOf(":") + 1).Trim();
                 break;
             }
         }
@@ -51,3 +55,4 @@ public class MUserInput : MonoBehaviour
    }
 
 }
+
