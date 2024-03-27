@@ -1,6 +1,6 @@
 """
 @Author: Hanbin Qin
-@Date: Mar 24, 2021
+@Date: Mar 24, 2024
 
 Based on https://github.com/SuperBruceJia/EEG-DL/blob/master/Models/Network/BiLSTM_with_Attention.py
 Modified to use Tensorflow 2.X
