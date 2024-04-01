@@ -339,7 +339,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 150967373}
         m_TargetAssemblyTypeName: Goal, Assembly-CSharp
-        m_MethodName: Level1
+        m_MethodName: ReplayCurrentLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -416,7 +416,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 150967367}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 342fb8701fba148b7a7566753ed0b581, type: 3}
+  m_Script: {fileID: 11500000, guid: ffcc5b2f6d7c16e49b668c892ccd0d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttonToShow: {fileID: 0}
@@ -735,7 +735,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 342380848}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 342fb8701fba148b7a7566753ed0b581, type: 3}
+  m_Script: {fileID: 11500000, guid: ffcc5b2f6d7c16e49b668c892ccd0d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttonToShow: {fileID: 0}
@@ -2035,7 +2035,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1897249810}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90e1dcddc1e9843388c513c1317d8023, type: 3}
+  m_Script: {fileID: 11500000, guid: 797f17e5e7ad08840bc0f01789ea4a63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
@@ -2187,7 +2187,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1897249810}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 342fb8701fba148b7a7566753ed0b581, type: 3}
+  m_Script: {fileID: 11500000, guid: ffcc5b2f6d7c16e49b668c892ccd0d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttonToShow: {fileID: 342380848}
