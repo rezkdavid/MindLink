@@ -7,6 +7,7 @@ TagManager:
   - Obstacle
   - Platform
   - Goal
+  - Teleporter
   layers:
   - Default
   - TransparentFX
