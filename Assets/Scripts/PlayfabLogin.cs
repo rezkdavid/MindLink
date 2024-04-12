@@ -4,6 +4,7 @@ using PlayFab.MultiplayerModels;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayfabLogin : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class PlayfabLogin : MonoBehaviour
         Debug.Log("Login Successful, information retreived from the database!");
         if (messageText != null)
             messageText.text = "Login Successful"; // Update UI message if messageText is not null
+
+        SceneManager.LoadScene("Level Select Screen");
     }
     void OnError(PlayFabError error){
         Debug.Log("Error in creation: " + error.GenerateErrorReport());

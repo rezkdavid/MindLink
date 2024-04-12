@@ -1915,7 +1915,6 @@ GameObject:
   - component: {fileID: 1692167389}
   - component: {fileID: 1692167388}
   - component: {fileID: 1692167387}
-  - component: {fileID: 1692167391}
   m_Layer: 5
   m_Name: Level Buttons
   m_TagString: Untagged
@@ -2011,18 +2010,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1692167391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1692167386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc97eecd8ac60764ba95336a726dc35b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1771974828
 GameObject:
   m_ObjectHideFlags: 0

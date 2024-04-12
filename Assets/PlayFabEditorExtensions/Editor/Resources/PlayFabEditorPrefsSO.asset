@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d0199c11aa6f514784c5c69cd8378d8, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f6ba4c3726a0437bad2445cc5dce4d7, type: 3}
   m_Name: PlayFabEditorPrefsSO
   m_EditorClassIdentifier: 
   DevAccountEmail: skaruppa@stevens.edu
-  DevAccountToken: 53ssi5uwu8r97xaz6pnrqcqmgpouhfw4daywefaxdestongtxh4h99u9xb4cmnkw4h7qpw1jcn1kj7wir6zbt47q41pxs9y7pn3e4tmexy5rxxh7x9azf73nxzkm5xq5mcooxj9e5omdo63y5x3nb9pq9tmwfigwny33o4gz8w7nkftbrhwfo6csqmiekczr13qfzwcn
+  DevAccountToken: oepekoh857y5kpg5p3ty9aiedtxswfjy17pwxpygmmck11o4dwb3hkoajzc8cea34qozk7h86r4doszdkk9xfwm1jchd4m9wdoq3uw8nhhpmg9rd38onh15rpmngu9kdmnc4jbcenjntkkrhs8rewas45icda5irwp6p34qr5x4n9izoy9xx5trfkotzarsm9juf6fiu
   AadAuthorization: 
   SelectedStudio: Team15
   SdkPath: Assets/PlayFabSDK

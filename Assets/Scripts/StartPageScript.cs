@@ -20,5 +20,10 @@ public class StartingScreenScript : MonoBehaviour
     {
         SceneManager.LoadScene("Title Screen");
     }
+
+    public void getUser()
+    {
+        SceneManager.LoadScene("UserType Screen");
+    }
 }
 

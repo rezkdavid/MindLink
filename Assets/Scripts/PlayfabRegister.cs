@@ -14,6 +14,13 @@ public class PlayfabRegister : MonoBehaviour
 
     public void RegisterButton()
     {
+        Debug.Log(email.text);
+        Debug.Log(password.text);
+        Debug.Log(userName.text);
+        Debug.Log(fullName.text);
+        //Debuglog(email.text);
+        
+        
         var request = new RegisterPlayFabUserRequest
         {
             Email = email.text,
