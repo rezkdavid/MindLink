@@ -1,0 +1,70 @@
+using UnityEngine;
+using System.Net.Sockets;
+using System.IO;
+using System.Threading;
+
+public class SocketClientController : MonoBehaviour
+{
+    private TcpClient client;
+    private StreamReader reader;
+    private Thread clientThread;
+
+    void Start()
+    {
+        ConnectToServer();
+    }
+
+    void ConnectToServer()
+    {
+        clientThread = new Thread(new ThreadStart(() =>
+        {
+            client = new TcpClient("localhost", 5555);
+            if (client.Connected)
+            {
+                Debug.Log("Client connected to server.");
+                reader = new StreamReader(client.GetStream());
+                
+                while (true)
+                {
+                    string message = reader.ReadLine();
+                    if (message != null)
+                    {
+                        Debug.Log("Received: " + message);
+                        ExecuteCommand(message);
+                    }
+                }
+            }
+        }));
+        clientThread.IsBackground = true;
+        clientThread.Start();
+    }
+
+    void ExecuteCommand(string command)
+    {
+        // Use Unity's main thread to execute actions on GameObjects
+        UnityMainThreadDispatcher.Instance().Enqueue(() =>
+        {
+            if (command == "left")
+            {
+                transform.Translate(-1, 0, 0); // Move left
+            }
+            else if (command == "right")
+            {
+                transform.Translate(1, 0, 0); // Move right
+            }
+        });
+    }
+
+    private void OnApplicationQuit()
+    {
+        if (clientThread != null && clientThread.IsAlive)
+        {
+            clientThread.Abort();
+        }
+        
+        if (client != null)
+        {
+            client.Close();
+        }
+    }
+}
