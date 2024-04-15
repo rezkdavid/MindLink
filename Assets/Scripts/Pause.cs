@@ -5,6 +5,7 @@ public class Pause : MonoBehaviour
 {
     public GameObject pauseMenuCanvas;
     private bool isPaused = false;
+    public bool ResumeButton;
 
     void Update()
     {
