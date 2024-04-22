@@ -66,7 +66,10 @@ public class LeaderboardDisplay : MonoBehaviour
             Text[] texts = newGo.GetComponentsInChildren<Text>();
             texts[1].text = (item.Position + 1).ToString();
             texts[2].text = item.DisplayName;
-            texts[3].text = item.StatValue.ToString();
+            texts[3].text = ((decimal)item.StatValue / 100).ToString("F2");
+            Debug.Log(((float)(item.StatValue / 100)).ToString());
+           
+
 
             Debug.Log(item.Position + " " + item.DisplayName + " " + item.StatValue);
         }
