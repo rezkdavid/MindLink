@@ -34,4 +34,7 @@ public class LevelSelect : MonoBehaviour
     {
         SceneManager.LoadScene("Level5");
     }
+    public void Leaderboard(){
+        SceneManager.LoadScene("LeaderBoard");
+    }
 }

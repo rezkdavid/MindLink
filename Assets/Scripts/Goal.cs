@@ -2,6 +2,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System;
+using UnityEditor.Build.Content;
+using System.Collections.Generic;
+using PlayFab.ClientModels;
+using PlayFab;
 
 public class Goal : MonoBehaviour
 {
@@ -28,6 +33,7 @@ public class Goal : MonoBehaviour
         }
 
         timer += Time.deltaTime;
+        
         UpdateTimerDisplay();
     }
 
@@ -39,6 +45,11 @@ public class Goal : MonoBehaviour
             ShowCollisionText(); 
             buttonToShow.SetActive(true);
             buttonToShow2.SetActive(true);
+            string currentScene= SceneManager.GetActiveScene().name;
+            CurrentScene(currentScene);
+            TimerFloat(timer);
+            SendLeaderboard((int)(timer*100), currentScene);
+
         }
     }
 
@@ -47,6 +58,7 @@ public class Goal : MonoBehaviour
         if (timerText != null)
         {
             timerText.text = "Time: " + timer.ToString("F2");
+
         }
     }
 
@@ -67,4 +79,31 @@ public class Goal : MonoBehaviour
     {
         SceneManager.LoadScene("Level Select Screen");
     }
+    public float TimerFloat(float finalTimeValue){
+        Debug.Log("Final Timer Value" + (finalTimeValue*100));
+        return timer;
+    }
+    public string CurrentScene(string currentScene){
+        Debug.Log(currentScene);
+        return currentScene;
+    }
+    public void SendLeaderboard(int score, string currentScene){
+        // string sceneSelect= CurrentScene();
+        var request= new  UpdatePlayerStatisticsRequest{
+            Statistics= new List<StatisticUpdate>{
+                new StatisticUpdate{
+                StatisticName = currentScene,
+                Value= score
+                }
+            }
+        };
+        PlayFabClientAPI.UpdatePlayerStatistics(request, OnLeaderboardUpdate, OnError);
+    }
+    void OnLeaderboardUpdate(UpdatePlayerStatisticsResult result){
+        Debug.Log("successfull leaderboard sent");
+    }
+    void OnError(PlayFabError error){
+        Debug.Log("Error in LeaderBoard: " + error.GenerateErrorReport());
+    }
+    
 }

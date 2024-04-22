@@ -18,10 +18,12 @@ public class PlayfabLogin : MonoBehaviour
         };
         PlayFabClientAPI.LoginWithEmailAddress(request, OnSuccess, OnError);
     }
-    void OnSuccess(LoginResult request){
+    void OnSuccess(LoginResult result){
         Debug.Log("Login Successful, information retreived from the database!");
+
         if (messageText != null)
             messageText.text = "Login Successful"; // Update UI message if messageText is not null
+            // string name= result.InfoResultPayload.PlayerProfile.DisplayName;
 
         SceneManager.LoadScene("Level Select Screen");
     }
