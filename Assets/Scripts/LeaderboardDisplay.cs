@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using PlayFab;
 using PlayFab.ClientModels;
 using UnityEngine;
@@ -56,23 +57,22 @@ public class LeaderboardDisplay : MonoBehaviour
 
     void OnLeaderboardSuccess(GetLeaderboardResult result)
     {
-        foreach (Transform item in rowsParent)
-        {
-            Destroy(item.gameObject);
-        }
-        foreach (var item in result.Leaderboard)
-        {
-            GameObject newGo = Instantiate(rowPrefab, rowsParent);
-            Text[] texts = newGo.GetComponentsInChildren<Text>();
-            texts[1].text = (item.Position + 1).ToString();
-            texts[2].text = item.DisplayName;
-            texts[3].text = ((decimal)item.StatValue / 100).ToString("F2");
-            Debug.Log(((float)(item.StatValue / 100)).ToString());
-           
 
+        var sortedLeaderboard = result.Leaderboard.OrderBy(x => x.StatValue).ToList();
 
-            Debug.Log(item.Position + " " + item.DisplayName + " " + item.StatValue);
-        }
+    foreach (Transform item in rowsParent)
+    {
+        Destroy(item.gameObject);
+    }
+
+    // Display the sorted leaderboard
+    foreach (var item in sortedLeaderboard)
+    {
+        GameObject newGo = Instantiate(rowPrefab, rowsParent);
+        Text[] texts = newGo.GetComponentsInChildren<Text>();
+        texts[1].text = item.DisplayName;
+        texts[2].text = ((decimal)item.StatValue / 100).ToString("F2");
+    }
     }
 
     void OnError(PlayFabError error)
