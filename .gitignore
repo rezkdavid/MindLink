@@ -87,6 +87,7 @@ crashlytics-build.properties
 node_modules/
 build/
 data/
+deployment/test_data/
 __pycache__/
 >>>>>>> ML-algorithm
 >>>>>>> Unity
