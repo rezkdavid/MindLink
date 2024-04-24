@@ -20,7 +20,7 @@ public class LeaderboardDisplay : MonoBehaviour
         {
             StatisticName = currentLevel,
             StartPosition = 0,
-            MaxResultsCount = 2
+            MaxResultsCount = 5
         };
         PlayFabClientAPI.GetLeaderboard(request, OnLeaderboardSuccess, OnError);
     }

@@ -2,29 +2,40 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public Transform leftObject;  // The leftmost object
-    public Transform rightObject; // The rightmost object
-    public float speed = 2f;     // Movement speed
+    public Transform leftObject;
+    public Transform rightObject;
+    public float speed = 2f;
 
-    private bool movingRight = true;
+    private bool movingRight = false;
+    private SpriteRenderer spriteRenderer;
+
+    void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     void Update()
     {
-        // Determine the target position based on the direction
         Vector3 targetPosition = movingRight ? rightObject.position : leftObject.position;
 
-        // Move towards the target position
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
 
-        // If the object reaches one of the limits, change direction
         if (transform.position == leftObject.position)
         {
             movingRight = true;
-            
+            FlipSprite();
         }
         else if (transform.position == rightObject.position)
         {
             movingRight = false;
+            FlipSprite();
         }
+    }
+
+    void FlipSprite()
+    {
+        Vector3 newScale = transform.localScale;
+        newScale.x *= -1;
+        transform.localScale = newScale;
     }
 }

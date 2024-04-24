@@ -9,6 +9,7 @@ TagManager:
   - Goal
   - Enemy
   - Teleporter
+  - Coin
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - Water
   - UI
   - Platform
-  - 
+  - Background
   - 
   - 
   - 

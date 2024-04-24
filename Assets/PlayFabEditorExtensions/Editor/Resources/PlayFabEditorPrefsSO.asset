@@ -9,16 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d7d134dbdd9844aa977bfb0da886efa, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f6ba4c3726a0437bad2445cc5dce4d7, type: 3}
   m_Name: PlayFabEditorPrefsSO
   m_EditorClassIdentifier: 
   DevAccountEmail: skaruppa@stevens.edu
-  DevAccountToken: gu5fdp79nw89hah6zdmk1oh6nbicd1pwxbrfc6kj8m8i5ragn11p8wp15fw3m499szg9wbzgpadosm6czomatindct6bobb89af8y7inxbqmzotoobrhqcfm3by8f8kntwa4i9yra3pqf3bxiu3j31jpknau6zuj96hn9rrwmwzdq7sdoopj7obkfgkun1fqb5gd7kkk
+  DevAccountToken: cn99fqaq8mmf4e4wtp5od9geatzjshu13dukwhckob9eoiyrzji1xtnhub75ni39ab3se8e53hcqw9gf48xzij19q8q4nayhkfny6636bwo45z31im6yegexcbu6o9ch8pgr5tpipi9fmb3ra3xj6wnoxempr47fit4gyt3ap7aqucm8z73fzewx9ug3tu6oayojwsmp
   AadAuthorization: 
-  SelectedStudio: Team15
+  SelectedStudio: 
   SdkPath: Assets/PlayFabSDK
   EdExPath: 
   LocalCloudScriptPath: 
   PanelIsShown: 0
-  curMainMenuIdx: 1
+  curMainMenuIdx: 0
   curSubMenuIdx: 0

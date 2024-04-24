@@ -12,14 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Level Select Screen.unity
     guid: 84dedea6c7660464cbb04abb94f8e646
   - enabled: 1
-    path: Assets/Scenes/End Card Screen.unity
-    guid: 770b9ae8f3bf8406ba798d090713caee
-  - enabled: 1
     path: Assets/Scenes/UserType Screen.unity
     guid: 42415a8b7006a42eb9bc099d001d36d5
-  - enabled: 1
-    path: Assets/Scenes/Game Screen.unity
-    guid: 3ed632cf69cff4bafb113d9a7f396496
   - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 7771d4ad3ff38429594ccb616a9895b8
@@ -37,5 +31,5 @@ EditorBuildSettings:
     guid: c45610a98050e44678d9ed99c93a3f0c
   - enabled: 1
     path: Assets/Scenes/LeaderBoard.unity
-    guid: ec0674c89d123436ab6ef9550486e30f
+    guid: 67d2db9a98f4b4924aab85dc955fa36d
   m_configObjects: {}
