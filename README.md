@@ -38,4 +38,4 @@ $ cd https://github.com/rezkdavid/MindLink
 
 
 ## Collaborators:
-This project was a collaborative effort by: [ksrivishnuram](https://www.github.com/ksrivishnuram), [HarveyQin](https://www.github.com/HarveyQin), [iriszhu43](https://www.github.com/iriszhu43), [Calvin526](https://www.github.com/Calvin526)   
+This project was a collaborative effort by: [rezkdavid](https://www.github.com/rezkdavid), [ksrivishnuram](https://www.github.com/ksrivishnuram), [HarveyQin](https://www.github.com/HarveyQin), [iriszhu43](https://www.github.com/iriszhu43), [Calvin526](https://www.github.com/Calvin526)   
